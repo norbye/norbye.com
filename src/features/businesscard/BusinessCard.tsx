@@ -1,11 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   faEnvelope,
   faGlobe,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./BusinessCard.module.css";
+  faPhone
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './BusinessCard.module.css';
+import mmsbilde from './mmsbilde.jpg';
+import norbyeLogo from './logo.png';
 
 export function BusinessCard() {
   return (
@@ -13,7 +15,7 @@ export function BusinessCard() {
       <div className={styles.stretcher}></div>
       <div className={styles.front}>
         <div className={styles.picture}>
-          <img src={"/assets/mmsbilde.jpg"} alt={"Jonatan Norbye"} />
+          <img src={mmsbilde} alt={'Jonatan Norbye'} />
           <b>JONATAN NORBYE</b>
           <span>INNEHAVER & UTVIKLER</span>
         </div>
@@ -42,7 +44,7 @@ export function BusinessCard() {
         </div>
       </div>
       <div className={styles.back}>
-        <img src={"/assets/logo.png"} alt="Norbye Programmering" />
+        <img src={norbyeLogo} alt="Norbye Programmering" />
       </div>
     </div>
   );

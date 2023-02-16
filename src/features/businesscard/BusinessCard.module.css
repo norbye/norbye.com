@@ -10,6 +10,28 @@ span {
   padding: 2%;
 }
 
+.businessCard .front {
+  display: flex;
+  flex-grow: 1;
+  backface-visibility: hidden;
+}
+
+.businessCard .back {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: white;
+  width: 98%;
+  margin-left: 1%;
+  /*transform: rotateY(180deg) rotateX(-180deg);*/
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
 .businessCard .front,
 .businessCard .back {
   /*transition: transform 1s linear;*/
@@ -17,29 +39,16 @@ span {
 }
 
 .businessCard:hover .front {
-  -moz-animation: spinFront 1.5s linear;
-  -o-animation: spinFront 1.5s linear;
-  -webkit-animation: spinFront 1.5s linear;
   animation: spinFront 1.5s linear;
 }
 
 .businessCard:hover .back {
-  -moz-animation: spinBack 1.5s linear;
-  -o-animation: spinBack 1.5s linear;
-  -webkit-animation: spinBack 1.5s linear;
   animation: spinBack 1.5s linear;
 }
 
 .businessCard > .stretcher {
   width: 0.0001%;
   padding-bottom: calc(100% * 55 / 85);
-}
-
-.businessCard .front {
-  display: flex;
-  flex-grow: 1;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .businessCard .picture {
@@ -69,26 +78,13 @@ span {
   font-weight: 300;
 }
 
-.businessCard .details {
-  flex-grow: 1;
-  background-color: rgb(87, 150, 116);
-}
-
 .details {
   display: flex;
 }
 
-.details .icons,
-.details .contactInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.details .icons span,
-.details .contactInfo span {
-  font-size: 110%;
-  line-height: 300%;
+.businessCard .details {
+  flex-grow: 1;
+  background-color: rgb(87, 150, 116);
 }
 
 .icons {
@@ -97,24 +93,6 @@ span {
   width: 14%;
   background-color: white;
   text-align: center;
-}
-
-.icons:after,
-.icons:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0;
-  background-color: inherit;
-  padding-bottom: 50%;
-  width: 57.7%;
-  z-index: 1;
-  transform-origin: 0 0;
-  transform: rotate(-30deg) skewX(30deg);
-}
-
-.icons:after {
-  top: 100%;
 }
 
 .contactInfo {
@@ -134,20 +112,35 @@ span {
   text-decoration: underline;
 }
 
-.businessCard .back {
-  position: absolute;
+.details .icons,
+.details .contactInfo {
   display: flex;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: white;
-  width: 98%;
-  margin-left: 1%;
-  /*transform: rotateY(180deg) rotateX(-180deg);*/
-  height: 100%;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  opacity: 0;
+}
+
+.details .icons span,
+.details .contactInfo span {
+  font-size: 110%;
+  line-height: 300%;
+}
+
+.icons:after,
+.icons:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: inherit;
+  padding-bottom: 50%;
+  width: 57.7%;
+  z-index: 1;
+  transform-origin: 0 0;
+  transform: rotate(-30deg) skewX(30deg);
+}
+
+.icons:after {
+  top: 100%;
 }
 
 .back img {
