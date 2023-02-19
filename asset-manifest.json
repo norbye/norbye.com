@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/norbye.com/static/css/main.a1cc100f.css",
-    "main.js": "/norbye.com/static/js/main.a0cdaf7e.js",
+    "main.js": "/norbye.com/static/js/main.6cda7393.js",
     "static/js/787.eb70bdf2.chunk.js": "/norbye.com/static/js/787.eb70bdf2.chunk.js",
+    "static/media/mmsbilde.jpg": "/norbye.com/static/media/mmsbilde.02f550200e78983b5eb4.jpg",
     "index.html": "/norbye.com/index.html",
     "main.a1cc100f.css.map": "/norbye.com/static/css/main.a1cc100f.css.map",
-    "main.a0cdaf7e.js.map": "/norbye.com/static/js/main.a0cdaf7e.js.map",
+    "main.6cda7393.js.map": "/norbye.com/static/js/main.6cda7393.js.map",
     "787.eb70bdf2.chunk.js.map": "/norbye.com/static/js/787.eb70bdf2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1cc100f.css",
-    "static/js/main.a0cdaf7e.js"
+    "static/js/main.6cda7393.js"
   ]
 }
